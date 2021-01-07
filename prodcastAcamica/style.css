@@ -1,0 +1,479 @@
+/* mobile styles */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family:'IBM Plex Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+  
+}
+header {
+  position: relative;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+
+.header-container {
+  overflow: hidden;
+}
+.hamburger {
+    float: right;
+    margin-top: -12px;
+    padding-right: 12px;
+    position: relative;
+
+  }
+  .menu{
+    overflow: hidden;
+    position: relative;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+   }
+  .menu-btn:checked ~ .menu{
+   display: block; 
+   }
+  .menu li a{
+    display: block;
+  
+  }
+  .menu li:hover{
+    background-color: #0af0be;
+   
+  }
+  .menu li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+    
+  }
+  .hamburger ul a {
+    display:block;
+    padding: 5px;
+    color: rgb(252, 245, 245);
+  
+  }
+  .hamburger .menu  li{
+    display:block;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    clear: both;
+    height: 0;
+    transition: height 0.2s ease-out;
+  }
+  .header .menu-icon .nav-icon {
+    display: block;
+    margin-left: 200px;
+    top: -20px;
+    height: 2px;
+    width: 18px;
+    background: #333;
+    position: relative;
+    transition: background 0.2s ease-out;
+    cursor: pointer;
+  }
+  .hamburger .menu-icon {
+    padding: 20px 5px;
+   
+  }
+  .header .menu-icon .nav-icon::before {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 5px;
+    transition: all 0.2s ease-out;
+  }
+  .header .menu-icon .nav-icon::after {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: -5px;
+    transition: all 0.2s ease-out;
+  }
+  .header .menu-btn {
+    display: none;
+  }
+
+  .header .menu-btn:checked ~ .menu {
+   height: 100%;
+  }
+  .header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+  }
+  .header .menu-btn:checked ~ .menu-icon .nav-icon::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .logo1 {
+    padding-top: 12px;
+    padding-left: 20px;
+  }
+  .hearder-title h1 {
+    padding-left: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .text-header {
+    padding-left: 30px;
+    width: 288px;
+    height: 60px;
+    font-family: "Courier New", Courier, monospace;
+    margin-bottom: 70px;
+  }
+ 
+  .hearder-title .icon-button {
+    padding-left: 20px;
+  }
+  .cros{
+    text-decoration: line-through;
+  }
+.bluedot {
+  width: 15px;
+  height: 15px;
+  color: blue;
+  border-radius: 50%;
+}
+  .title-section {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    position: relative;
+    color: white;
+    padding-top: 40px;
+    font-size: 45px;
+    left: 20px;
+    padding-bottom: 30px;
+  }
+  .spotify {
+    clip-path: polygon(0 10%, 100% 2%, 100% 94%, 0 99%);
+    background-color: blue;
+    margin-top: -30px;
+    max-width: 100%;
+    position: relative;
+    padding: 80px 0 120px;
+  }
+  iframe {
+    width: 100%;
+    min-height: 239px;
+  }
+  .iframe-container iframe {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 0 20px;
+  }
+
+  .iphone {
+    padding-left: 10px;
+   max-width: 100%;
+   max-height: 490px;
+    top:-90px;
+    position: relative;
+  }
+  .title-two {
+    padding-left: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 42px;
+  }
+  .main-post .text-post {
+    font-family: monospace;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  #text-post {
+    font-family: monospace;
+    font-size: 12px;
+    font-size: 10px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    margin-top: -25px;
+  }
+  .title3 {
+    line-height: 40px;
+    font-size: 37px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 20px;
+    padding-top: 40px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  .title-icons {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 30px;
+   margin: 30px 150px 20px 20px ;
+    
+  }
+  
+  .prefooter {
+    
+    height: 341px;
+    clip-path: polygon(0 26%, 100% 7%, 100% 100%, 0 100%);
+    background-color: blue;
+    position: relative;
+  }
+  .title0 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+  }
+  .title4 {
+    line-height: 1.2;
+    width: 150px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: -40px;
+    font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+  }
+  
+  .container {
+    height: 120px;
+  }
+  .icons-items .sitfg {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .copy{
+  text-align: center;
+  }
+ 
+/* button styles */
+
+.button {
+  width: 290px;
+  background-color: #0af0be;
+  margin-bottom: 30px;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+.button {
+  color: black;
+  text-decoration: none;
+}
+.button:hover {
+  color: white;
+  background-size: 290px;
+  background-image: linear-gradient(to right, #0af0be, blue);
+}
+
+/* images guests */
+
+.imagess-section img {
+  display: block;
+  width: 100%;
+}
+
+.iconcc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.iconcc p {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 40px;
+  text-align: center;
+}
+@media screen and (min-width: 960px) {
+/* desktop styles */
+ .menu{
+ all: unset;
+ 
+}
+h1{
+  position: relative;
+}
+.hearder-title{
+  margin-left: 200px;
+}
+.menu ul{
+ margin-top: -40px;
+  padding-top: -30px;
+  display: flex;
+  flex-direction: row;
+}
+.menu ul li{
+  padding: 40px 10px;
+  
+}
+.menu ul li a{
+  color: black;
+  position: relative;
+}
+.menu li:hover{
+  background-color: transparent;
+ 
+}
+.menu  a::after{
+  content: " ";
+  width: 100%;
+  height: 2px;
+  bottom: 14px;
+  display: block;
+  position: absolute;
+
+}
+.menu  a:hover::after{
+ width: 100%;
+ background-color: #0af0be;
+  
+} 
+.menu a:hover{
+  color: #0af0be;
+}
+
+.menu-icon{
+  display: none;
+}
+.cros::before{
+  content: " ";
+  background-color: black;
+  width: 110px;
+  height: 3px;
+ display:inline-block;
+ position: absolute;
+ top: 25px;
+ }
+.title-section{
+  clip-path: polygon(0 14%, 100% 2%, 100% 84%, 0 99%);
+}
+
+.iframe-container{
+  border: none;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  grid-gap: 30px;
+  padding-right: 70px;
+  margin-left: 50px;
+ 
+ 
+}
+
+
+.second2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  height: 430px;
+  max-width: 100%;
+  position: relative;
+  margin-bottom: -100px;
+}
+.title-section{
+  margin-left: 150px;
+}
+
+.imagess-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.iphone {
+  padding-left: 250px;
+  max-width: 100%;
+  height: 550px;
+  padding-top: -200px;
+  position: absolute;
+}
+.title4{
+  width: 100%;
+ margin-top: 50px;
+}
+.title-icons {
+  margin-left: 100px;
+}
+.prefooter {
+    
+  height: 341px;
+  clip-path: polygon(0 26%, 100% 7%, 100% 100%, 0 100%);
+  background-color: blue;
+  position: relative;
+}
+.title-two h2 {
+  padding-bottom: 10px;
+  left: 360px;
+  top: 756px;
+  width: 199.5px;
+  height: 62px;
+}
+.main-post {
+  width: 237px;
+  height: 102px;
+  left: 360px;
+}
+
+.headp {
+  grid-column: 2/-1;
+}
+.photos-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-evenly;
+  width: 100%;
+  height: 220px;
+}
+.icons-items .sitfg {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  float: right;
+  padding: 20px;
+}
+
+ .container {
+ display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 30px;
+  justify-content: space-evenly;
+  height: 100px;
+   
+}
+.copy{
+display: flex;
+justify-content: flex-start;
+}
+.sitfg a {
+  padding: 20px;
+  cursor: pointer;
+ }
